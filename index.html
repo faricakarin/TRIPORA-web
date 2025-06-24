@@ -1,0 +1,109 @@
+<!-- Tripora - One Page Web App -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TRIPORA - Jelajahi Desa Wisata</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans scroll-smooth">
+  <!-- Navbar -->
+  <header class="shadow-md fixed w-full bg-white z-50">
+    <div class="container mx-auto flex justify-between items-center px-6 py-4">
+      <h1 class="text-2xl font-bold text-blue-600">TRIPORA</h1>
+      <nav class="space-x-6 hidden md:flex">
+        <a href="#home" class="hover:text-blue-600">Beranda</a>
+        <a href="#daftar-desa" class="hover:text-blue-600">Desa Wisata</a>
+        <a href="#detail-desa" class="hover:text-blue-600">Detail Desa</a>
+        <a href="#booking" class="hover:text-blue-600">Booking</a>
+        <a href="#login" class="hover:text-blue-600">Login</a>
+        <a href="#admin" class="hover:text-blue-600">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pt-20">
+    <!-- Beranda -->
+    <section id="home" class="bg-blue-50 py-20 text-center">
+      <h2 class="text-4xl font-bold mb-4">Jelajahi Keindahan Desa Wisata Indonesia</h2>
+      <p class="mb-6 text-gray-600">Booking mudah, cepat, dan terpercaya melalui TRIPORA</p>
+      <a href="#daftar-desa" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">Lihat Desa Wisata</a>
+    </section>
+
+    <!-- Daftar Desa -->
+    <section id="daftar-desa" class="py-10 px-6 max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+        <img src="https://source.unsplash.com/400x250/?village" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h3 class="font-bold text-lg">Desa Nglinggo</h3>
+          <p class="text-sm text-gray-500">Kulon Progo</p>
+          <a href="#detail-desa" class="inline-block mt-2 text-blue-600">Lihat Detail →</a>
+        </div>
+      </div>
+      <div class="border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+        <img src="https://source.unsplash.com/400x250/?ricefield" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h3 class="font-bold text-lg">Desa Pentingsari</h3>
+          <p class="text-sm text-gray-500">Sleman</p>
+          <a href="#detail-desa" class="inline-block mt-2 text-blue-600">Lihat Detail →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detail Desa -->
+    <section id="detail-desa" class="py-16 bg-blue-50 px-6 text-center">
+      <h2 class="text-3xl font-bold mb-4">Detail Desa Wisata</h2>
+      <p class="text-gray-600 max-w-xl mx-auto">Nikmati suasana kebun teh, atraksi budaya lokal, kuliner desa, dan penginapan ramah lingkungan di Desa Nglinggo. Semua informasi bisa kamu akses dari satu halaman ini!</p>
+    </section>
+
+    <!-- Booking -->
+    <section id="booking" class="py-16 px-6 max-w-xl mx-auto">
+      <h2 class="text-2xl font-bold mb-4 text-center">Form Booking</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Nama Lengkap" class="w-full border p-3 rounded" />
+        <input type="email" placeholder="Email" class="w-full border p-3 rounded" />
+        <input type="date" class="w-full border p-3 rounded" />
+        <select class="w-full border p-3 rounded">
+          <option>Pilih Desa Wisata</option>
+          <option>Desa Nglinggo</option>
+          <option>Desa Pentingsari</option>
+        </select>
+        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700">Pesan Sekarang</button>
+      </form>
+    </section>
+
+    <!-- Login/Register -->
+    <section id="login" class="py-16 bg-gray-50 px-6 max-w-xl mx-auto">
+      <h2 class="text-2xl font-bold mb-4 text-center">Login / Register</h2>
+      <form class="space-y-4">
+        <input type="email" placeholder="Email" class="w-full border p-3 rounded" />
+        <input type="password" placeholder="Password" class="w-full border p-3 rounded" />
+        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700">Masuk</button>
+      </form>
+    </section>
+
+    <!-- Dashboard Mitra -->
+    <section id="admin" class="py-16 px-6 max-w-5xl mx-auto">
+      <h2 class="text-2xl font-bold mb-4 text-center">Dashboard Mitra Desa</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 shadow rounded">
+          <h3 class="font-semibold mb-2">Total Tiket Terjual</h3>
+          <p class="text-3xl font-bold text-blue-600">1.240</p>
+        </div>
+        <div class="bg-white p-6 shadow rounded">
+          <h3 class="font-semibold mb-2">Pendapatan Bulan Ini</h3>
+          <p class="text-3xl font-bold text-green-500">Rp 24.500.000</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white shadow-inner py-6 mt-12">
+    <div class="container mx-auto px-6 text-center text-gray-500 text-sm">
+      &copy; 2025 TRIPORA. Jelajahi Desa Wisata Indonesia.
+    </div>
+  </footer>
+</body>
+</html>
